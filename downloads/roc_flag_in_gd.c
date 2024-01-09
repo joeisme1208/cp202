@@ -74,24 +74,7 @@ void draw_white_sun(gdImagePtr img, int center_x, int center_y, int sun_radius, 
     float sr = sun_radius/tan(75*deg);
     int ax, ay, bx, by, dx, dy, ex, ey;
     gdPoint points[4];
-    /* 在塗上十二道光芒中的單一菱形區域之前, 先以座標點畫線測試是否正確
-    ax = center_x;
-    ay = center_y - sun_radius;
-    bx = center_x - sun_radius*tan(15*deg);
-    by = center_y;
-    ex = center_x;
-    ey = center_y + sun_radius;
-    dx = center_x + sun_radius*tan(15*deg);
-    dy = center_y;
-    // AB
-    gdImageLine(img, ax, ay, bx, by, color);
-    // BE
-    gdImageLine(img, bx, by, ex, ey, color);
-    // ED
-    gdImageLine(img, ex, ey, dx, dy, color);
-    // DA
-    gdImageLine(img, dx, dy, ax, ay, color);
-    */
+
     ax = center_x;
     ay = center_y - sun_radius;
     bx = center_x - sun_radius*tan(15*deg);

@@ -67,3 +67,4 @@ void draw_white_sun(gdImagePtr img, int center_x, int center_y, int sun_radius, 
         fromY = toY;
    }
 }
+
